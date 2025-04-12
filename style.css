@@ -12,7 +12,22 @@
     background-color: #0d0d0d;
     line-height: 1.6;
   }
+
+  h1, h2, h3 {
+    font-family: 'Playfair Display', serif; /* add a premium serif */
+    font-weight: 700;
+  }
   
+  p, label, a {
+    font-family: 'Segoe UI', sans-serif;
+    color: #ccc;
+  }
+  
+  h2 {
+    font-size: 2.5rem;
+    color: #00bfa6;
+  }
+
   header {
     background-color: #111;
     padding: 20px 40px;
@@ -23,6 +38,14 @@
     top: 0;
     z-index: 1000;
   }
+
+  .btn, .search-btn, .send-btn {
+    transition: transform 0.2s ease;
+  }
+  .btn:hover, .search-btn:hover, .send-btn:hover {
+    transform: scale(1.05);
+  }
+  
   
   header h1 span {
     color: #00bfa6;
@@ -125,6 +148,60 @@
     margin-bottom: 20px;
   }
 
+  .featured {
+    padding: 60px 20px;
+    background-color: #111;
+    text-align: center;
+  }
+  
+  .listing-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .listing-card {
+    background: #1a1a1a;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 280px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.3);
+  }
+  
+  .listing-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+  
+  .listing-card .info {
+    padding: 15px;
+    color: #fff;
+  }
+
+  .testimonials {
+    background: #000000;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .testimonial-card {
+    max-width: 600px;
+    margin: auto;
+    font-style: italic;
+    font-size: 1.1rem;
+    color: #eee;
+  }
+  .testimonial-card span {
+    display: block;
+    margin-top: 15px;
+    color: #00bfa6;
+    font-weight: bold;
+  }
+  
+  
+
   .here {
     display: flex;
     align-items: center;
@@ -164,6 +241,30 @@
   .left .contact {
     font-size: 18px;
     color: #ddd;
+  }
+
+  .social_icons {
+    display: flex;
+    gap: 10px; /* spacing between icons */
+    margin-top: 10px;
+  }
+  
+  .social_icons .icon {
+    font-size: 24px; /* adjust icon size */
+    color: #fff;
+  }
+  
+  .social_icons .icon a {
+    color: inherit; /* keep icon color consistent */
+    text-decoration: none;
+  }
+  
+  .social_icons .icon:hover {
+    color: #e74c3c; /* optional hover effect */
+  }
+
+  .social_icons {
+    justify-content: flex-start; /* or center, space-between, etc. */
   }
   
   .center img {
@@ -417,12 +518,12 @@
   }
   
   footer {
-    background-color: #111;
+    background-color: #0d0d0d;
+    padding: 40px 20px;
     text-align: center;
-    padding: 30px 20px;
-    margin-top: 40px;
-    font-size: 0.9rem;
-    color: #777;
+    color: #999;
+    font-size: 14px;
+    border-top: 1px solid #222;
   }
 
   .contact-info .company {
