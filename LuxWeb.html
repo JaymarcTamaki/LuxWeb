@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marci Metzger</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>MARCI METZGER <span>HOMES</span></h1>
+    <nav>
+      <a href="#destinations">Photos</a>
+      <a href="#packages">Services</a>
+      <a href="#about">Search</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="hamburger" onclick="toggleSidebar()">&#9776;</div>
+    <div id="sidebar" class="sidebar">
+      <span class="close-btn" onclick="toggleSidebar()">&times;</span>
+      <nav class="sidebar-nav">
+        <a href="#destinations">Photos</a>
+        <a href="#packages">Services</a>
+        <a href="#about">Search</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="overlay"></div>
+    <h2>MARCI METZGER - THE RIDGE REALTY GROUP</h2>
+    <p>PAHRUMP REALTOR</p>
+    <a href="#destinations" class="btn">Explore Now</a>
+  </section>
+
+  <section class="here">
+    <div class="left">
+      <h1>Hi, I’m <span>Marci<br>Metzger</span></h1>
+      <p class="title">REALTOR FOR NEARLY 3 DECADES!</p>
+      <p>A licensed real estate professional since 1995,</p>
+      <p>I bring decades of experience from Washington State</p>
+      <p>to Southern Nevada. Now based in Pahrump,</p>
+      <p> I’m proud to help clients discover the lifestyle</p>
+      <p> and value this community offers.</p>
+      <br>
+      <p class="contact">206-919-6886</p>
+    </div>
+
+    <div class="center"></div>
+
+    <div class="right">
+      <div class="logo-box"><img src="logos/1.png" alt="Logo 1" /></div>
+      <div class="logo-box"><img src="logos/2.png" alt="Logo 2" /></div>
+      <div class="logo-box"><img src="logos/3.png" alt="Logo 3" /></div>
+      <div class="logo-box"><img src="logos/4.png" alt="Logo 4" /></div>
+    </div>
+  </section>
+
+  <section class="get-it-sold">
+    <h2>GET IT SOLD</h2>
+  
+    <div class="sold-grid">
+      <div class="sold-item">
+        <img src="sold/1.jpg" alt="Kitchen" />
+        <div class="text">
+          <h3>Top Residential Sales Last 5 Years</h3>
+          <p>We helped nearly 90 clients in 2021, and closed 28.5 million in sales! Our team works hard everyday to grow and learn, so that we may continue to excel in our market.</p>
+        </div>
+      </div>
+  
+      <div class="sold-item reverse">
+        <img src="sold/2.jpg" alt="House with Pool" />
+        <div class="text">
+          <h3>Don't Just List it…</h3>
+          <p>Get it SOLD! We exhaust every avenue to ensure our listings are at the fingertips of every possible buyer, getting you top dollar for your home.</p>
+        </div>
+      </div>
+  
+      <div class="sold-item">
+        <img src="sold/3.jpg" alt="Keys" />
+        <div class="text">
+          <h3>Guide to Buyers</h3>
+          <p>Nobody knows the market like we do. Enjoy having a pro at your service. Market analysis, upgrades lists, contractors on speed dial, & more!</p>
+        </div>
+      </div>
+    </div>
+  </section>  
+
+  <section id="destinations" class="gallery">
+    <h2>Photo gallery</h2>
+    
+    <div class="gallery-container">
+      <button class="gallery-arrow left">&#10094;</button>   <!-- ‹ -->
+  
+      <div class="gallery-slider">
+        <img src="gallery/1.png" alt="Place 1">
+        <img src="gallery/2.png" alt="Place 2">
+        <img src="gallery/3.png" alt="Place 3">
+        <img src="gallery/4.png" alt="Place 4">
+        <img src="gallery/5.png" alt="Place 5">
+        <img src="gallery/6.png" alt="Place 6">
+        <img src="gallery/7.png" alt="Place 7">
+      </div>
+  
+      <button class="gallery-arrow right">&#10095;</button>  <!-- › -->
+    </div>
+  </section>
+  
+
+  <section id="about" class="info-section">
+    <h2>FIND YOUR DREAM HOME</h2>
+    <p>Discover the stories behind the places. Adventure is calling you to go beyond the usual and embrace the extraordinary.</p>
+    <button class="btn" id="openModal">SEARCH NOW</button>
+  </section>
+
+  <div id="searchModal" class="modal-overlay">
+    <div class="modal-box">
+      <h3>SEARCH LISTINGS</h3>
+      <form class="search-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label>Location</label>
+            <select><option>Any</option></select>
+          </div>
+          <div class="form-group">
+            <label>Type</label>
+            <select><option>Any</option></select>
+          </div>
+          <div class="form-group">
+            <label>Sort By</label>
+            <select><option>Newest</option></select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Bedrooms</label>
+            <select><option>Any Number</option></select>
+          </div>
+          <div class="form-group">
+            <label>Baths</label>
+            <select><option>Any Number</option></select>
+          </div>
+          <div class="form-group">
+            <label>Min Price</label>
+            <input type="text" placeholder="$0">
+          </div>
+          <div class="form-group">
+            <label>Max Price</label>
+            <input type="text" placeholder="$1,000,000+">
+          </div>
+        </div>
+        <button type="submit" class="search-btn">SEARCH NOW</button>
+      </form>
+    </div>
+  </div>
+
+  <section id="packages" class="packages">
+    <h2>OUR SERVICES</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="services/1.png" alt="Package 1">
+        <div class="content">
+          <h3>Real Estate Done Right</h3>
+          <p>Nervous about your property adventure? Don’t be. Whether you're getting ready to buy or sell your residence, looking at investment properties, or just curious about the markets, our team ensures you get the best experience possible!.</p>
+        </div>
+      </div>
+  
+      <div class="card">
+        <img src="services/2.png" alt="Package 2">
+        <div class="content">
+          <h3>Commercial & Residential</h3>
+          <p>Large or small, condo or mansion, we can find it and get at the price that's right. Fixer-uppers? Luxury? We can help with all of it! We live, work, and play in this community. Happy to help you find where to put you hard-earned dollars.</p>
+        </div>
+      </div>
+  
+      <div class="card">
+        <img src="services/3.png" alt="Package 3">
+        <div class="content">
+          <h3>Rely on Expertise</h3>
+          <p>If you have questions about affordability, credit, and loan options, trust us to connect you with the right people to get the answers you need in a timely fashion. We make sure you feel confident and educated every step of the way.</p>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+  
+
+  <section id="contact" class="contact-section">
+    <h2 class="section-title">GET IN TOUCH</h2>
+    <p class="section-subtitle">CALL OR VISIT</p>
+  
+    <div class="contact-container">
+      <!-- Left Info Card -->
+      <div class="contact-info">
+        <h3>Marci Metzger</h3>
+        <p class="company">The Ridge Realty Group</p>
+        <p><strong>Address:</strong><br>3190 HW-160, Suite F, Pahrump, Nevada 89048, United States</p>
+        <p><strong>Phone:</strong> <a href="tel:2069196886">(206) 919-6886</a></p>
+  
+        <h3>Office Hours</h3>
+        <details>
+          <summary><strong>Open Today:</strong> 8:00 a.m. – 7:00 p.m.</summary>
+          <ul class="hours-list">
+            <li>Monday: 7:00 a.m. – 8:00 p.m.</li>
+            <li>Tuesday: 7:00 a.m. – 8:00 p.m.</li>
+            <li>Wednesday: 7:00 a.m. – 8:00 p.m.</li>
+            <li>Thursday: 7:00 a.m. – 8:00 p.m.</li>
+            <li>Friday: 7:00 a.m. – 8:00 p.m.</li>
+            <li>Saturday: 7:00 a.m. – 8:00 p.m.</li>
+          </ul>
+        </details>
+        <p class="note">Appointments outside office hours available upon request. Just call!</p>
+      </div>
+  
+      <!-- Right Contact Form -->
+      <form class="contact-form">
+        <div class="form-row">
+          <input type="text" placeholder="Name" required>
+          <input type="email" placeholder="Email" required>
+        </div>
+        <textarea placeholder="Message" required></textarea>
+        <button type="submit" class="send-btn">Send <i class="fa fa-paper-plane"></i></button>
+      </form>
+    </div>
+  </section>
+  
+  
+
+  <footer>
+    <p>© 2025 Explore The World. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
