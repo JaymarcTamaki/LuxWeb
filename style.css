@@ -5,6 +5,11 @@
     padding: 0;
     box-sizing: border-box;
   }
+
+  html {
+    scroll-behavior: smooth;
+  }
+  
   
   body {
     font-family: 'Segoe UI', sans-serif;
@@ -200,7 +205,21 @@
     font-weight: bold;
   }
   
+  .cta-button {
+    margin-top: 30px;
+    display: inline-block;
+    background-color: #00bfa6;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.3s ease;
+  }
   
+  .cta-button:hover {
+    background-color: #009e8b;
+  }
 
   .here {
     display: flex;
