@@ -39,10 +39,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: sticky;
+    position: fixed;
     top: 0;
     z-index: 1000;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.4); /* optional shadow */
   }
+
 
   .btn, .search-btn, .send-btn {
     transition: transform 0.2s ease;
@@ -79,42 +84,93 @@
   margin-left: 20px;
 }
 
+.sidebar-header {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background-color: #ffffff;
+}
+
+/* Logo inside sidebar */
+.sidebar-logo {
+  max-width: 140px;
+  height: auto;
+  display: block;
+}
+
+/* Close button repositioned */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.sidebar-logo img {
+  width: 120px;
+  height: auto;
+}
+
 /* Sidebar */
 .sidebar {
   height: 100%;
   width: 0;
   position: fixed;
-  z-index: 1000;
   top: 0;
-  left: 0;
+  right: 0;
   background-color: #111;
   overflow-x: hidden;
-  transition: 0.4s;
+  transition: 0.4s ease;
   padding-top: 60px;
+  z-index: 1001;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* Sidebar Links */
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
 .sidebar-nav a {
-  padding: 12px 24px;
+  padding: 12px 0;
+  color: white;
   text-decoration: none;
   font-size: 18px;
-  color: white;
-  display: block;
   transition: 0.3s;
+  width: 100%;
+  text-align: center;
 }
 
 .sidebar-nav a:hover {
   background-color: #333;
 }
 
-/* Close Button */
-.close-btn {
-  position: absolute;
-  top: 20px;
-  right: 25px;
-  font-size: 36px;
-  cursor: pointer;
-  color: white;
+
+.location-title {
+  margin-top: 40px;
+  font-size: 20px;
+  color: #00bfa6;
+  font-weight: 600;
+  text-align: center;
+}
+
+.map-embed {
+  margin-top: 20px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.4);
 }
 
   .hero {
@@ -545,6 +601,40 @@
     border-top: 1px solid #222;
   }
 
+  .footer-social-icons {
+    display: flex;
+    justify-content: center; /* Centers the icons horizontally */
+    align-items: center;
+    gap: 30px; /* Space between icons */
+    margin-top: 20px;
+  }
+
+  .footer-social-icons i {
+    font-size: 54px; /* or whatever you like */
+    color: white;
+    transition: color 0.3s ease;
+    padding-right: 20px;
+  }
+  
+  .footer-social-icons a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .footer-social_icons a i {
+    font-size: 30px; /* this controls icon size */
+    color: white;
+    transition: color 0.3s ease;
+    padding-right: 15px;
+  }
+  
+  .footer-social-icons a:hover i {
+    color: #00bfa6;
+  }
+  
+
   .contact-info .company {
     font-size: 16px;
     font-weight: 400;
@@ -644,7 +734,7 @@
     padding: 30px;
     border-radius: 12px;
     flex: 1 1 300px;
-    max-width: 400px;
+    max-width: 600px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
   }
   
