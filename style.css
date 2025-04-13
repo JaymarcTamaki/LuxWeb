@@ -118,7 +118,7 @@
 }
 
   .hero {
-    background: url('images/hero.jpg') no-repeat center center/cover;
+    background: url('3.png') no-repeat center center/cover;
     height: 90vh;
     position: relative;
     display: flex;
@@ -247,7 +247,7 @@
   }
   
   .left h1 span {
-    color: #e74c3c;
+    color: #00bfa6;
   }
   
   .left .title {
@@ -279,7 +279,7 @@
   }
   
   .social_icons .icon:hover {
-    color: #e74c3c; /* optional hover effect */
+    color: #00bfa6; /* optional hover effect */
   }
 
   .social_icons {
